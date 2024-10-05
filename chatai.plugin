@@ -1,0 +1,19 @@
+#!name=ChatAI
+#!desc=ChatAI,智能计算器,翻译官,翻译通@Douliu
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1014.png
+
+[Script]
+#智能计算器
+http-response ^https?:\/\/new\.zxkt\.xyz\/api\/insertUser script-path=https://raw.githubusercontent.com/Rnik666/YJTJS/main/AI.js, requires-body=true, timeout=60, tag=AI
+
+#Chat Ai
+http-response ^https?:\/\/ai\.zxkt\.xyz\/api\/getUserInfo script-path=https://raw.githubusercontent.com/Rnik666/YJTJS/main/AI.js, requires-body=true, timeout=60, tag=AI
+
+#实时翻译官
+http-response ^https?:\/\/new\.xslm333\.xyz\/api\/getUserInfo script-path=https://raw.githubusercontent.com/Rnik666/YJTJS/main/AI.js, requires-body=true, timeout=60, tag=AI
+
+#翻译通
+http-response ^https?:\/\/new\.zxkt\.xyz\/api\/getUserInfo script-path=https://raw.githubusercontent.com/Rnik666/YJTJS/main/AI.js, requires-body=true, timeout=60, tag=AI
+
+[MITM]
+hostname = new.zxkt.xyz, ai.zxkt.xyz, new.xslm333.xyz
