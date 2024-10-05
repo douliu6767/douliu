@@ -1,0 +1,11 @@
+#!name=时光短剧
+#!desc=时光短剧
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1005.png
+
+[Script]
+http-response ^https?:\/\/apidj\.meetboxs\.com\/api\/v1\/user\/account\/info script-path=https://raw.githubusercontent.com/Rnik666/YJTJS/main/SGDJ.js, requires-body=true, timeout=60, tag=SGDJ
+
+http-response ^https?:\/\/akdj\.lunlunkj\.vip\/api\/v1\/user\/account\/info script-path=https://raw.githubusercontent.com/Rnik666/YJTJS/main/SGDJ.js, requires-body=true, timeout=60, tag=SGDJ
+
+[MITM]
+hostname = *.meetboxs.com, akdj.lunlunkj.vip
